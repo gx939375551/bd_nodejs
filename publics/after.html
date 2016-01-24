@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>新闻管理系统</title>
+    <link rel="stylesheet" type="text/css" href="css/after.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/after.js"></script>
+</head>
+
+<body>
+    <!--系统标题-->
+    <div class="after-header">
+        <h1>新闻管理系统</h1>
+    </div>
+    <!--系统中心区域-->
+    <div class="after-content">
+        <div class="navbar-news">
+            <ul>
+                <li id="all">全部新闻</li>
+                <li id="addnews">发布新闻</li>
+            </ul>
+        </div>
+        <div>
+            <!--全部新闻-->
+            <div class="all-news">
+                <!--表格-->
+                <table class="table" cellpadding="0" cellspacing="0">
+                    <thead id="thead">
+                        <tr>
+                            <th>ID</th>
+                            <th>标题</th>
+                            <th>类型</th>
+                            <th>内容</th>
+                            <th>时间</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                </table>
+                <div class="dele-info"><span>删除成功</span></div>
+            </div>
+            <!--发布新闻-->
+            <div class="add-news">
+                <form id="add" enctype='multipart/form-data'>
+                    <p class="add-news-p">新闻标题</p>
+                    <input id="addnewsheader" type="text" required="required" class="news-header" name="addtitle" min="0" max="15" /><span id="addinfo" class="addinfo">新闻标题!重要信息都不填写？</span>
+                    <div id="addinfo">
+                        <h3 class="addinfoh3">当前发布状态</h3>
+                        <div class="addentry">
+                            <p class="addinfop">待命</p>
+                        </div>
+                    </div>
+                    <p class="add-news-p">新闻类型</p>
+                    <select id="addtype" name="addtype">
+                        <option value="">未选择</option>
+                        <option value="推荐">推荐</option>
+                        <option value="娱乐">娱乐</option>
+                        <option value="军事">军事</option>
+                        <option value="社会">社会</option>
+                        <option value="科技">科技</option>
+                        <option value="女人">女人</option>
+                    </select>
+                    <span id="addinfo-2" class="addinfo">你还未进行任何的选择</span>
+                    <p class="add-news-p">发布时间</p>
+                    <input id="senddate" type="date" name="adddate" />
+                    <p class="add-news-p">新闻内容</p>
+                    <textarea id="addtext" required="required" class="news-text" name="addtext" min="1" max="22"></textarea><span id="addinfo-3" class="addinfo">新闻内容!重要信息都不填写？</span>
+                    <!--上传图片-->
+                    <label class="fileheader">上传图片</label>
+                    <input type="file" name="files" class="file" />
+                    <!--重置-->
+                    <input type="reset" value="重置新闻" class="news-reset" />
+                    <!--提交-->
+                    <input id="addbtn" type="submit" value="提交新闻" class="news-submit" />
+                </form>
+            </div>
+            <!--更改新闻-->
+            <div class="update-news">
+                <form id="update">
+                    <p class="update-news-p">新闻ID</p>
+                    <input id="update-id" type="text" class="update-id" readonly="readonly" required="required" name="updateid">
+                    <p class="update-news-p">新闻标题</p>
+                    <input id="update-title" type="text" required="required" class="update-header" name="updatetitle" placeholder="请准确核实新闻标题,它将是你更新新闻的唯一依据" />
+                    <p class="update-news-p">新闻类型</p>
+                    <select id="update-type" name="updatetype">
+                        <option value="">未选择</option>
+                        <option value="推荐">推荐</option>
+                        <option value="娱乐">娱乐</option>
+                        <option value="军事">军事</option>
+                        <option value="社会">社会</option>
+                        <option value="科技">科技</option>
+                        <option value="女人">女人</option>
+                    </select>
+                    <p class="update-news-p">发布时间</p>
+                    <input id="update-date" type="date" name="updatedate" />
+                    <!--此处新闻发布时间-->
+                    <p class="update-news-p">新闻内容</p>
+                    <textarea id="update-content" required="required" class="update-text" name="updatetext"></textarea>
+                    <input id="updatereset" type="submit" value="取消更改" class="update-reset" />
+                    <input id="updatebtn" type="submit" value="更改新闻" class="update-submit" />
+                </form>
+                <div class="updata-info">更新成功</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

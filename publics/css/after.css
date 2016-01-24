@@ -1,0 +1,464 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.after-header {
+    width: 1280px;
+    height: 100px;
+    background-color: #1c344c;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.after-header h1 {
+    text-align: center;
+    line-height: 100px;
+    color: #ffffff;
+}
+
+
+/*新闻操作区*/
+
+.after-content {
+    width: 1280px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/*发布新闻*/
+
+.add-news {
+    display: none;
+}
+
+
+/*添加新闻input位置*/
+
+.add-news form {
+    margin-left: 400px;
+}
+
+.add-news-p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #6d6b6b;
+}
+
+
+/*新闻标题*/
+
+.news-header {
+    width: 300px;
+    height: 30px;
+    padding-left: 10px;
+    outline: none;
+    border: 1px solid #f1f1f1;
+}
+
+.news-header:hover {
+    border: 1px solid #129de5;
+}
+
+
+/*x新闻内容*/
+
+.news-text {
+    width: 400px;
+    height: 200px;
+    padding-left: 10px;
+    padding-top: 10px;
+    outline: none;
+    border: 1px solid #f1f1f1;
+    resize: none;
+}
+
+.news-text:hover {
+    border: 1px solid #129de5;
+}
+
+.news-file {
+    opacity: 0;
+    margin-left: 20px;
+    width: 100px;
+    height: 30px;
+    position: relative;
+    z-index: 1;
+}
+/*替换上传图片的样式按钮*/
+
+.news-file-style {
+    width: 100px;
+    height: 30px;
+    background-color: #129de5;
+    border: none;
+    color: #ffffff;
+    position: relative;
+    left: -122px;
+}
+/*新闻提交按钮*/
+
+.news-submit {
+    width: 110px;
+    height: 35px;
+    background-color: #14c969;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #f1f1f1;
+    float: right;
+}
+
+
+/*新闻重置*/
+
+.news-reset {
+    width: 110px;
+    height: 35px;
+    background-color: #ff3838;
+    border: none;
+    color: #f1f1f1;
+    outline: none;
+    cursor: pointer;
+    margin-left: 20px;
+    float: right;
+    margin-right: 100px;
+}
+
+
+/*新闻操导航*/
+
+.navbar-news {
+    width: 90px;
+    border-right: 1px solid #f1f1f1;
+    margin-left: 40px;
+    margin-top: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+.navbar-news ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline;
+    cursor: pointer;
+}
+
+.navbar-news ul li {
+    margin-top: 20px;
+    font-size: 15px;
+    color: #636363;
+}
+
+.navbar-news ul li:hover {
+    color: #129de5;
+}
+
+
+/*提示信息*/
+
+.addinfo {
+    color: #ff3838;
+    font-size: 14px;
+    margin-left: 10px;
+    font-weight: bold;
+    display: none;
+}
+
+
+/*调整部分提示信息的位置*/
+
+#addinfo-3 {
+    position: relative;
+    top: -100px;
+}
+
+#addinfo-4 {
+    margin-left: -110px;
+}
+
+
+/*新闻标题和类型获得聚焦时*/
+
+.news-header:focus {
+    border: 1px solid #14c969;
+}
+
+
+/*新闻内容获得聚焦时*/
+
+.news-text:focus {
+    border: 1px solid #14c969;
+}
+/*发布新闻end*/
+
+
+/*更改新闻*/
+
+.update-news {
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.update-news form {
+    margin-left: 400px;
+}
+
+.update-news-p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #6d6b6b;
+}
+
+.update-header {
+    width: 300px;
+    height: 30px;
+    padding-left: 10px;
+    outline: none;
+    border: 1px solid #f1f1f1;
+}
+.update-id{
+    width: 100px;
+    height: 25px;
+    padding-left: 10px;
+    outline: none;
+    border: 1px solid #ff3333;
+}
+.update-type {
+    width: 300px;
+    height: 30px;
+    padding-left: 10px;
+    outline: none;
+    border: 1px solid #f1f1f1;
+}
+
+.update-type:hover {
+    border: 1px solid #129de5;
+}
+
+
+/*x新闻内容*/
+
+.update-text {
+    width: 400px;
+    height: 200px;
+    padding-left: 10px;
+    padding-top: 10px;
+    outline: none;
+    border: 1px solid #f1f1f1;
+    resize: none;
+}
+
+.update-text:hover {
+    border: 1px solid #129de5;
+}
+.update-header:hover{
+     border: 1px solid #129de5;
+}
+.update-file {
+    opacity: 0;
+    margin-left: 20px;
+    width: 100px;
+    height: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+
+/*替换上传图片的样式按钮*/
+
+.update-file-style {
+    width: 100px;
+    height: 30px;
+    background-color: #129de5;
+    border: none;
+    color: #ffffff;
+    position: relative;
+    left: -122px;
+}
+
+
+/*新闻提交按钮*/
+
+.update-submit {
+    width: 110px;
+    height: 35px;
+    background-color: #14c969;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #f1f1f1;
+    float: right;
+    margin-top: 170px;
+}
+
+
+/*新闻重置*/
+
+.update-reset {
+    width: 110px;
+    height: 35px;
+    background-color: #ff3838;
+    border: none;
+    color: #f1f1f1;
+    outline: none;
+    cursor: pointer;
+    margin-left: 20px;
+    float: right;
+    margin-right: 100px;
+    margin-top: 170px;
+}
+
+.update-type:focus {
+    border: 1px solid #14c969;
+}
+.update-header:focus{
+     border: 1px solid #14c969;
+}
+/*新闻内容获得聚焦时*/
+
+.update-text:focus {
+    border: 1px solid #14c969;
+}
+
+.update-news span {
+    font-size: 14px;
+    margin-left: 15px;
+    color: #777777;
+}
+
+
+/*临时文件*/
+
+.add-news {
+    display: none;
+}
+.update-news {
+    display: none;
+}
+
+.navbar-news ul li:nth-child(1) {
+    color: #ff3333;
+}
+
+/*添加信息动态加载*/
+
+.addinfoh3 {
+    float: right;
+    position: relative;
+    top: -40px;
+    right: 230px;
+    color: #a8a8a8;
+}
+
+.addentry {
+    width: 200px;
+    height: 50px;
+    border-left: 10px solid #129de5;
+    float: right;
+    margin-right: 20px;
+}
+
+.addinfop {
+    line-height: 50px;
+    margin-left: 10px;
+    color: #ff3838;
+}
+
+.addinfop2 {
+    line-height: 50px;
+    margin-left: 10px;
+    color: #14c969;
+}
+
+#searchinfo2 {
+    color: #ff3838;
+}
+
+
+/*图片上传样式*/
+
+.fileheader {
+    margin-left: -420px;
+    position: relative;
+    top: 50px;
+    font-size: 12px;
+    color: #ff3838;
+}
+
+.file {
+    position: relative;
+    top: 50px;
+}
+
+
+/*全部新闻*/
+
+.table {
+    border: 1px solid #1c344c;
+    border-right: none;
+    text-align: center;
+    margin:0 auto;
+}
+
+.table td {
+    border-top: 1px solid #1c344c;
+    border-right: 1px solid #1c344c;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.table th {
+    border-right: 1px solid #1c344c;
+    padding: 5px 10px;
+}
+
+.all-dele {
+    background-color: #ff3838;
+    border: none;
+    padding: 5px 10px;
+    color: #ffffff;
+    cursor: pointer;
+    margin-right: 2px;
+    outline: none;
+}
+
+.all-updata {
+    background-color: #14c969;
+    border: none;
+    padding: 5px 10px;
+    color: #ffffff;
+    cursor: pointer;
+    margin-left: 2px;
+    outline: none;
+}
+/*删除成功*/
+.dele-info{
+    display: none;
+    width: 100px;
+    height: 40px;
+    background-color: #14c969;
+    margin: 200px auto;
+    text-align: center;
+    line-height: 40px;
+    color: #ffffff;
+}
+/*更改成功*/
+.updata-info{
+    display: none;
+    width: 100px;
+    height: 40px;
+    background-color: #14c969;
+    position: absolute;
+    top: 200px;
+    margin: 200px 1000px;
+    text-align: center;
+    line-height: 40px;
+    color: #ffffff;
+}
+   
